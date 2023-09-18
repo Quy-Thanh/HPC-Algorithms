@@ -1,4 +1,4 @@
-#include<stdio.h>			/*standard input/output*/
+#include<stdio.h>
 
 void enter_array(int array[], int n){
 	int i;
@@ -16,30 +16,30 @@ void print_array(int array[], int n){
 	printf("\n");
 }
 
-void pubble_sort(int array[], int n){
+void insertion_sort(int array[], int n){
 	int i, j;
-	for(i = 0; i < n - 1; i++){
-		for(j = n - 1; j > i; j--){
-			if(array[j] < array[j - 1]){
-				int temp = array[j];
-				array[j] = array[j - 1];
-				array[j - 1] = temp;
-			}
+	for(i = 1; i < n; i++){
+		j = i;
+		int temp = array[i];
+		while(j > 0 && temp < array[j - 1]){
+			array[j] = array[j - 1];
+			j--;
 		}
+		array[j] = temp;
 	}
 }
 
 int main(){
 	int n;
-	printf("Enter the number of elements in the array: ");
+	printf("Enter the number elements of array: ");
 	scanf("%d", &n);
-	int array[n];
 	
+	int array[n];
 	enter_array(array, n);
 	printf("The array just entered is: \n");
 	print_array(array, n);
 	
-	pubble_sort(array, n);
+	insertion_sort(array, n);
 	
 	printf("The array after sorting is: \n");
 	print_array(array, n);
