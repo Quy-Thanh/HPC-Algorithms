@@ -27,14 +27,18 @@ If you would like to contribute to this project, follow the steps below:
 ## Condition
 
 -[C/C++ Coding Standard](https://www.state-machine.com/doc/AN_QL_Coding_Standard.pdf)
+
 -[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 
 ## Directory structure
 
 ├── sequential_computing/
+
 ├── parallel_computing/
+
 ├── LICENSE
+
 └── README.md
 
 ## Contributors
