@@ -4,6 +4,7 @@
 
 - [Installation](#Installation)
 - [Contributing](#Contributing)
+- [Condition](#Condition)
 - [Directory Structure](#Directory-structure)
 - [Contributors](#Contributors)
 - [License](#License)
@@ -23,11 +24,21 @@ If you would like to contribute to this project, follow the steps below:
 4. Push to the branch: `git push origin my-feature`
 5. Submit a pull request
 
+## Condition
+
+-[C/C++ Coding Standard](https://www.state-machine.com/doc/AN_QL_Coding_Standard.pdf)
+
+-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+
 ## Directory structure
 
 ├── sequential_computing/
+
 ├── parallel_computing/
+
 ├── LICENSE
+
 └── README.md
 
 ## Contributors
