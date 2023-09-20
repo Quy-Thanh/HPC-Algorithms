@@ -1,0 +1,33 @@
+//1.Thuat_toan_tuan_tu
+def sum_sequential(arr):      //tinh tong day so
+    total = 0
+    for num in arr:
+        total += num
+    return total
+
+
+//2.Chuyen doi sang thuat toan song song ( Parallelize )
+import multiprocessing
+
+def sum_parallel(arr):
+    num_processes = multiprocessing.cpu_count()  # Số lượng lõi CPU
+    chunk_size = len(arr) // num_processes  # Chia mảng thành các phần nhỏ
+
+    def worker(start, end):
+        partial_sum = 0
+        for i in range(start, end):
+            partial_sum += arr[i]
+        return partial_sum
+
+    pool = multiprocessing.Pool(processes=num_processes)
+
+    # Chia mảng thành các phần nhỏ và tính tổng riêng lẻ cho mỗi phần
+    chunks = [(i * chunk_size, (i + 1) * chunk_size) for i in range(num_processes)]
+    results = pool.starmap(worker, chunks)
+
+    # Tổng hợp các tổng riêng lẻ thành tổng chung
+    total = sum(results)
+    pool.close()
+    pool.join()
+
+    return total
