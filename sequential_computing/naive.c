@@ -37,7 +37,7 @@ void print_matrix(int array[][100], int n, int m) {
     }
 }
 
-void Naive(int n, int k, int m, int A[n][k], int B[k][m], int C[n][m]) {
+void Naive(int n, int k, int m, int A[][100], int B[][100], int C[][100]) {
     int i, j, o;
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
