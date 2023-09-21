@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define max 100
 
-void enter_matrix(int array[max][100], int n, int m) {
+void enter_matrix(int array[][100], int n, int m) {
     int i, j;
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
@@ -11,29 +11,44 @@ void enter_matrix(int array[max][100], int n, int m) {
     }
 }
 
-void print_matrix(int array[max][100], int n, int m) {
+void print_matrix(int array[][100], int n, int m) {
     int i, j;
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
-            printf("%d", array[i][j]);
+            printf("%d  ", array[i][j]);
         }
         printf("\n");
     }
 }
 
+void Strassen() {
+	//
+}
+
 
 int main() {
-    int n, m;
-    printf("Enter the number of rows: ");
-    scanf("%d", &n);
-    printf("Enter the number of columns: ");
-    scanf("%d", &m);
-
-    int array[n][m];
-    enter_matrix(array, n, m);
-    printf("The array just entered is: \n");
-    print_matrix(array, n, m);
-
+    int ar, ac, br, bc;
+    
+    int A[ar][ac];
+    int B[br][bc];
+    int C[ar][bc];
+    
+    printf("Number of rows of matrix A: ");
+    scanf("%d", &ar);
+    printf("Number of columns of matrix A: ");
+    scanf("%d", &ac);
+    enter_matrix(A, ar, ac);
+    
+    printf("Number of rows of matrix B: ");
+    scanf("%d", &br);
+    printf("Number of columns of matrix B: ");
+    scanf("%d", &bc);
+	enter_matrix(B, br, bc);
+	
+	Strassen(A, B, C);
+	
+	printf("\n*******----*******\n\nC = A x B = \n");
+	print_matrix(C, ar, bc);
     return 0;
 }
 
