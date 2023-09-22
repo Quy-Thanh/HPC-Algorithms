@@ -1,0 +1,9 @@
+Cài đặt OpenCL, có hõ trợ trên C++
+
+Video hướng dẫn:
+https://www.youtube.com/watch?v=IYNLz2pQhnA 
+
+B1: Check xem máy tính có hỗ trợ OpenCl không, nếu Intel thì chắc chắn, nhưng phải xem Intel core version nào để tải OpenCL thích hợp
+B2: Tải OpenCl Driver trên web Intel, phiên bản 32 đi với 32 bit, 64 bit đi với 64 bit.
+B3:Thêm thư viên OpenCL vào C++            #include <CL/cl.h>
+
