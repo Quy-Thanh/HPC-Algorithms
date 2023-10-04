@@ -1,4 +1,4 @@
-# Ha Noi University of Industry's High-Performance Computing
+# High performance computing and more
 
 ## Table of contents
 
