@@ -45,8 +45,7 @@ If you would like to contribute to this project, follow the steps below:
 
 - [@Quy-Thanh](https://github.com/Quy-Thanh)
 - [@minhnguyenparalax](https://github.com/minhnguyenparalax)
-- [@Cuong-Nguyen](https://github.com/nguyenduccuongvpl)
-- [@bugslayerr](https://github.com/bugslayerr)
+- [@VuTuan](https://github.com/VuTuan13)
 
 
 ## License
