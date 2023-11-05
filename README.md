@@ -5,5 +5,6 @@
 
 
 ## Complexity
-![Uploading image.png…]()
+![image](https://github.com/minhnguyenparalax/High-Performance-Computing/assets/138836179/1dbbe62c-acd9-4440-b16c-225b8bafa6c8)
+
 
